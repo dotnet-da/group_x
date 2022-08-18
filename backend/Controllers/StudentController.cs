@@ -39,8 +39,8 @@ namespace backend.Controllers
         {
             await Db.Connection.OpenAsync();
             body.Db = Db;
-            await body.InsertAsync();
-            return new OkObjectResult(body);
+            int res=await body.InsertAsync();
+            return new OkObjectResult(res);
         }
 
         // PUT api/Student/5
