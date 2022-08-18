@@ -26,3 +26,4 @@ C:\group_x\backend\obj\Debug\net6.0\backend.pdb
 C:\group_x\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
 C:\group_x\backend\obj\Debug\net6.0\ref\backend.dll
 C:\group_x\backend\bin\Debug\net6.0\MySqlConnector.dll
+C:\group_x\backend\bin\Debug\net6.0\BCrypt.Net-Next.dll
