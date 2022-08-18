@@ -39,11 +39,8 @@ namespace backend.Controllers
         {
             await Db.Connection.OpenAsync();
             body.Db = Db;
-            int result=0;
-            result=await body.InsertAsync();
+            int result=await body.InsertAsync();
             Console.WriteLine("inserted id="+result);
-            if (result==0)
-                return new NotFoundResult();
             return new OkObjectResult(result);
     
         }

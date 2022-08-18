@@ -72,9 +72,16 @@ namespace backend
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"INSERT INTO `book` (`name`, `author`, `isbn`) VALUES (@name, @author, @isbn);";
             BindParams(cmd);
-            await cmd.ExecuteNonQueryAsync();
-            id_book = (int) cmd.LastInsertedId;
-            return id_book;
+            try
+            {
+                await cmd.ExecuteNonQueryAsync();
+                int id_user = (int) cmd.LastInsertedId;
+                return id_user; 
+            }
+            catch (System.Exception)
+            {   
+                return 0;
+            } 
         }
 
         public async Task UpdateAsync()
