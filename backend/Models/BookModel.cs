@@ -67,13 +67,14 @@ namespace backend
         }
     
 
-        public async Task InsertAsync()
+        public async Task<int> InsertAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"INSERT INTO `book` (`name`, `author`, `isbn`) VALUES (@name, @author, @isbn);";
             BindParams(cmd);
             await cmd.ExecuteNonQueryAsync();
             id_book = (int) cmd.LastInsertedId;
+            return id_book;
         }
 
         public async Task UpdateAsync()
