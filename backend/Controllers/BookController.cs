@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace backend.Controllers
 {
     [Route("api/[controller]")]
+    [BasicAuthorization]
     public class BookController : ControllerBase
     {
         public BookController(Database db)
