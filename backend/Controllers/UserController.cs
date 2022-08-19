@@ -44,6 +44,7 @@ namespace backend.Controllers
             body.password = BCrypt.Net.BCrypt.HashPassword(body.password);
             body.Db = Db;
             int result=await body.InsertAsync();
+            Console.WriteLine("inserted id="+result);
             return new OkObjectResult(result);
         }
 

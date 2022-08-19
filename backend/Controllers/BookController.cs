@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace backend.Controllers
 {
     [Route("api/[controller]")]
+    [BasicAuthorization]
     public class BookController : ControllerBase
     {
         public BookController(Database db)
@@ -42,6 +43,7 @@ namespace backend.Controllers
             int result=await body.InsertAsync();
             Console.WriteLine("inserted id="+result);
             return new OkObjectResult(result);
+    
         }
 
         // PUT api/Book/5
