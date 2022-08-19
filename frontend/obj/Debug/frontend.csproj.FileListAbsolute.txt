@@ -14,8 +14,6 @@ C:\group_x\frontend\obj\Debug\frontend.csproj.GenerateResource.cache
 C:\group_x\frontend\obj\Debug\frontend.csproj.CoreCompileInputs.cache
 C:\group_x\frontend\obj\Debug\frontend.exe
 C:\group_x\frontend\obj\Debug\frontend.pdb
-C:\group_x\frontend\obj\Debug\Book.g.cs
-C:\group_x\frontend\obj\Debug\Book.baml
 C:\group_x\frontend\bin\Debug\Newtonsoft.Json.dll
 C:\group_x\frontend\bin\Debug\Newtonsoft.Json.xml
 C:\group_x\frontend\obj\Debug\frontend.csproj.CopyComplete
@@ -40,3 +38,7 @@ C:\frontend\obj\Debug\frontend.csproj.CoreCompileInputs.cache
 C:\frontend\obj\Debug\frontend.csproj.CopyComplete
 C:\frontend\obj\Debug\frontend.exe
 C:\frontend\obj\Debug\frontend.pdb
+C:\group_x\frontend\obj\Debug\BookWindow.g.cs
+C:\group_x\frontend\obj\Debug\BookWindow.baml
+C:\group_x\frontend\obj\Debug\StudentWindow.g.cs
+C:\group_x\frontend\obj\Debug\StudentWindow.baml

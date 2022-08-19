@@ -23,9 +23,9 @@ namespace frontend
     /// <summary>
     /// Interaction logic for Book.xaml
     /// </summary>
-    public partial class Book : Window
+    public partial class BookWindow : Window
     {
-        public Book()
+        public BookWindow()
         {
             InitializeComponent();
         }
