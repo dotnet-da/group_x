@@ -87,18 +87,27 @@ namespace backend
             catch (System.Exception)
             {   
                 return 0;
-            }
-            
+            }  
 
         }
 
-        public async Task UpdateAsync()
+        public async Task<int> UpdateAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"UPDATE `User` SET `username` = @username, `password` = @password WHERE `id_user` = @id_User;";
             BindParams(cmd);
             BindId(cmd);
-            await cmd.ExecuteNonQueryAsync();
+            try
+            {
+                int numberOfAffectedRows=await cmd.ExecuteNonQueryAsync();
+                return numberOfAffectedRows;
+            }
+            catch (System.Exception)
+            {
+                
+                return 0;
+            }
+            
         }
 
         public async Task DeleteAsync()
