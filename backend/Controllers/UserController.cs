@@ -60,8 +60,8 @@ namespace backend.Controllers
                 return new NotFoundResult();
             result.username = body.username;
             result.password = body.password;
-            await result.UpdateAsync();
-            return new OkObjectResult(result);
+            int res=await result.UpdateAsync();
+            return new OkObjectResult(res);
         }
 
         // DELETE api/User/5

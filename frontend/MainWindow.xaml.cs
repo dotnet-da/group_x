@@ -61,8 +61,10 @@ namespace frontend
                 if (string.Compare(response, "true") == 0)
                 {
                     labelResult.Content = "Login OK";
-                    Book objectBook=new Book();
-                    objectBook.Show();
+                    //BookWindow objectBook=new BookWindow();
+                    //objectBook.Show();
+                    StudentWindow objectStudentWindow=new StudentWindow();
+                    objectStudentWindow.Show();
                     this.Close();
                 }
                 else

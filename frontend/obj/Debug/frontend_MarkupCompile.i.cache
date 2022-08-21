@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\frontend\obj\Debug\
+C:\group_x\frontend\obj\Debug\
 frontend
 none
 false
 DEBUG;TRACE
-C:\frontend\App.xaml
-2604431740
+C:\group_x\frontend\App.xaml
+31759770579
 
-101594377594
-141549800980
-Book.xaml;MainWindow.xaml;
+12424549746
+141436339800
+BookWindow.xaml;MainWindow.xaml;StudentWindow.xaml;
 
 True
 

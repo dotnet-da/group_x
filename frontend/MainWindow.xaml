@@ -29,6 +29,7 @@
         <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="Username"/>
         <TextBlock x:Name="textBlock2" Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="Password"/>
         <Label x:Name="labelResult" Grid.Column="3" Content="Label" HorizontalAlignment="Left" Margin="55,0,0,0" Grid.Row="6" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="1"  Grid.Row="6" />
 
     </Grid>
 </Window>
